@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    
+    :root{
+        --background: #f2f2f2;
+        --button-red: #ff1212;
+        --white:#FFFFFF;
+        --black:#000000;
+        --rounding-30: 30px;
+        --rounding-35: 35px;
+        --font-size-std: 18px;
+        --button-hieght-60: 60px;
+    }
+
+    body{
+        height: 100vh; 
+        justify-content: center;
+        background: var(--background);
+        font-family: sans-serif;
+    }
+
+    .content-centered{
+        display: flex;
+        align-items: center;
+    }
+
+    .margin-arounded{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .padding-arounded-20{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container{
+        width: 60%;
+        height: 700px; 
+        background: var(--white);
+        border-radius: var(--rounding-30);
+        display: flex;
+        overflow: hidden;
+    }
+
+    .box-left , .box-right{
+        width: 50%;
+        height: 100%;
+    }
+    .box-left img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .box-right{
+        padding: 10px;
+    }
+    .menu-options{
+        height: 15%;
+        justify-content: space-between;
+    }
+
+    .profile{ 
+        align-content: center;
+        font-size: var(--font-size-std);
+    }
+
+    .btn-save{
+        height: var(--button-hieght-60);
+        background-color: var(--button-red);
+        border-radius: var(--rounding-35);
+        border: none;
+        font-size: var(--font-size-std);
+        color: var(--white);
+    }
+
+    .link{
+        color: var(--black);
+    }
+
+    .profile-user{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        overflow: hidden; 
+    }
+    .profile-user img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .user-accont p{
+        font-size: var(--font-size-std);
+    }
+
+    .visite-site{
+        margin-top: 15px;
+        height: var(--button-hieght-60);
+        width: 100%;
+        font-size: var(--font-size-std);
+        border-radius: var(--rounding-30);
+        border: none;
+    }
+
+</style>
+
+<body class="content-centered">
+    <div class="container">
+        <div class="box-left">
+            <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg">
+        </div>
+        <div class="box-right">
+            
+            <div class="menu-options content-centered">
+
+                <div class="">
+                    <span>
+                        <img src="../icons/heart.svg" alt="">
+                    </span>
+                    <span class="margin-arounded">
+                        <img src="../icons/share.svg" alt="">
+                    </span>
+                    <span>
+                        <img src="../icons/more.svg" alt="">
+                    </span>
+                </div>
+               
+               <div class="content-centered">
+                    <span class="content-centered margin-arounded ">
+                        <p class="profile">Profile</p>
+                        <img src="../icons/arrow_down.svg" alt="">
+                    </span>
+
+                    <button class="btn-save padding-arounded-20">Save</button>
+               </div>
+
+            </div>
+            <a class="link" href="https://www.youtube.com/" target="_blank">instagram.com</a>
+            <h1>Home office inspirations design your work space</h1>
+            <div class="user-accont content-centered">
+                <div class="profile-user">
+                    <img src="https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg">
+                </div>
+                <p class="margin-arounded">Haven Hud</p>
+            </div>
+            <button class="visite-site">Visite site</button>
+        </div>
+    </div>
+</body>
+
+</html>
